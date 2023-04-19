@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+table{
+    width: 30%;
+    margin: 2em;
+}
+h1,td,#prTable,#knapTable,table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    /* background-color: rgba(0, 0, 0, 0.699); */
+    background-color: #B3E8E5;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 20px;
+}
+.contact{
+    height: 3%;
+    width: 3%;
+    margin: 2px;
+    transition: 3s;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.img:hover{
+    transition: 0.9s;
+    height: 4%;
+    width: 4%;
+}
+#copyright{
+    color: #EAF6F6;
+    margin: 0;
+}   
+hr{
+    border-style: dotted none none;
+    border-color: #B3E8E5;
+    border-width: 10px;
+    width: 8%;
+    margin: 50px auto 50px auto;
+}
