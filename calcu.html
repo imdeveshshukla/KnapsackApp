@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- local css -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- excell converter -->
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+</head>
+<body class="bg-primary bg-gradient" style="--bs-bg-opacity: 0.25;">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Knapsack Project</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" href="#">Calculate</a>
+            <!-- <a class="nav-link disabled">Disabled</a> -->
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- <h1>Knapsack Project</h1> -->
+    <div id="prTable" class="m-2">
+    <h3 class="m-3">Enter Product:</h3>
+        <input type="text" name="ProductName" id="prName" placeholder="Enter Product Name">
+        <input type="number" name="ProductValue" id="prValue" placeholder="Enter Product Worth">
+        <input type="number" name="ProductWeight" id="prWeight" placeholder="Enter Poduct Weight">
+        <button type="submit" id="enter">Enter</button>
+        <table style="border-collapse: collapse;visibility: hidden;" id="upperTable">
+            <tr>
+            <th>Product Name</th>
+            <th>Product Value</th>
+            <th>Product Weight</th>
+            </tr>
+        </table>
+    </div>
+    <div id="knapTable" class="m-2">
+        <h3 class="m-3">Enter Total Bag Weight</h3>
+        <input type="number" name="BagWeight" id="bgWeight">
+        <button type="submit" id="goBtn">Go</button>
+        <table style="border-collapse: collapse;visibility: hidden;" id="lowerTable">
+            <tr>
+                <th>Product Name</th>
+                <th>Product Value</th>
+                <th>Product Weight</th>
+            </tr>
+        </table>
+            <button id="createEx" onclick="exportX('xlsx')">Download(Excel)</button>
+    </div>
+    <script src="javascript/index.js"></script>
+    
+</body>
+</html>
